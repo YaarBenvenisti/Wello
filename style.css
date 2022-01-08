@@ -17,10 +17,22 @@
     font-family: "Minimal Mono Regular";
     src: url("fonts/minimal_mono_regular.woff2") format("woff2");
 }
+
+@font-face {
+    font-family: "karrik Regular";
+    src: url("fonts/karrik-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Karrik Italic";
+    src: url("fonts/karrik_Italic.woff2") format("woff2");
+}
+
+
+
 * {
     font-family: Helvetica, sans-serif;
     box-sizing: border-box;
-    
 }
 
 body {
@@ -62,44 +74,6 @@ a:visited {
     margin: 0px;
 }
 
-.marquee {
-    position: relative;
-    overflow: hidden;
-    z-index: 5;
-    margin-top: -7%;
-    --offset: 54px;
-    --move-initial: calc( -50% + var(--offset));
-    --move-final: calc( -25% + var(--offset));
-}
-
-.marquee-inner {
-    width: fit-content;
-    display: flex;
-    position: relative;
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 5s linear infinite;
-}
-
-.marquee span {
-    font-family: sans-serif;
-    font-size: 128px;
-    padding: 0 20px;
-}
-
-.marquee:hover .marquee-inner {
-    animation-play-state: paused;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translate3d(var(--move-initial), 0, 0);
-    }
-
-    100% {
-        transform: translate3d(var(--move-final), 0, 0);
-    }
-}
-
 .margins {
     max-width: 95%;
     margin: auto;
@@ -137,11 +111,19 @@ a:visited {
 }
 
 .pills p{
-    font-family: "Minimal Mono Bold";
+    font-family: "Helvetica Regular";
     font-size: 35px;
     padding: 20px 0px;
     margin: 0px;
     border-bottom: solid black 4px;
+}
+
+.pills p:hover {
+    background-color: #d8fd00;
+    transition: background-color 0.6s ease;
+    font-size: 45px;
+    padding: 10px 0px;
+    transition: padding 0.6s ease;
 }
 
 
@@ -239,8 +221,6 @@ a:visited {
     margin-bottom: 0px;
     margin-top: 30px;
     font-size: 14px;
-
-    
 }
 
 .pill_right {
@@ -304,14 +284,20 @@ a:visited {
     margin: 3px;
     margin-bottom: 0px;
     font-size: 14px;
-    
 }
+
 
 .showreel {
     z-index: 10;
     position: fixed;
     margin-top:-8px;
     margin-left:-40px
+}
+
+.explanation {
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: auto;
 }
 
 
