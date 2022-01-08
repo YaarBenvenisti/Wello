@@ -1,0 +1,438 @@
+@font-face {
+    font-family: "Helvetica Regular";
+    src: url("fonts/helvetic_regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Helvetica Bold";
+    src: url("fonts/helvetica_bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Minimal Mono Bold";
+    src: url("fonts/minimal-mono-bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Minimal Mono Regular";
+    src: url("fonts/minimal_mono_regular.woff2") format("woff2");
+}
+* {
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body {
+    overflow-x:hidden;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    margin-top: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+nav p {
+    border-bottom: solid black 2px;
+}
+
+
+p {
+    font-size: 16px;
+    margin-top: 4px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    margin-bottom: 0px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0px;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.marquee {
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    margin-top: -7%;
+    --offset: 54px;
+    --move-initial: calc( -50% + var(--offset));
+    --move-final: calc( -25% + var(--offset));
+}
+
+.marquee-inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 5s linear infinite;
+}
+
+.marquee span {
+    font-family: sans-serif;
+    font-size: 128px;
+    padding: 0 20px;
+}
+
+.marquee:hover .marquee-inner {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+
+.margins {
+    max-width: 95%;
+    margin: auto;
+}
+
+/* .pills_body {
+    overflow-y: hidden;
+} */
+
+.tagline {
+    position: absolute;
+    font-size: 15px;
+    top: 21px;
+    left: 70px;
+    padding: 2px;
+    margin: 0px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+.browse_background {
+    background-color: blue;
+}
+
+.emotions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+}
+
+.pills {
+    display: flex;
+    flex-direction: column;
+}
+
+.pills p{
+    font-family: "Minimal Mono Bold";
+    font-size: 35px;
+    padding: 20px 0px;
+    margin: 0px;
+    border-bottom: solid black 4px;
+}
+
+
+.pill_title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 50px;
+}
+
+.upper_title {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.emotion_name {
+    position: relative;
+    left: 100px;
+    width: 80px;
+}
+
+
+.emotions_names {
+    width: 80px;
+}
+
+.pill_info {
+    display: flex;
+}
+
+.pill_title {
+    display: flex;
+    position: relative;
+    top: 60px;
+}
+
+.pill_usage {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 400px;
+    
+}
+
+.pill_usage section {
+    width: 45%;
+
+}
+
+.pill_more_info {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 130px;
+}
+
+.pill_more_info section {
+    width: 45%;
+}
+
+.awkwardizol_dosage {
+    margin-left: 10px;
+}
+
+.awkwardizol_dosage p{
+    display: inline-block;
+    padding: 2px 4px;
+    margin: 8px 0px;
+    border: dotted black 1px;
+    font-size: 13px;
+    position: relative;
+    top: 80px;
+    background-color: #d8fd00;
+}
+
+.small_titles {
+    font-family: "Minimal Mono Bold";
+    font-size: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 2px;
+}
+
+.pill_info_emotion {
+    display: flex;
+}
+
+.pill_info_emotion p {
+    display: inline-block;
+    padding: 2px;
+    border: dotted black 1.5px;
+    background-color: #d8fd00;
+    margin: 6px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 14px;
+
+    
+}
+
+.pill_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
+.pill_right section {
+    margin: 40px;
+}
+
+.similar_pills {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0px;
+    
+}
+
+.similar_pills img{
+    margin-top: -180px;
+}
+
+.similar_pills_names {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.similar_pills_names p {
+    margin-top: -240px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 2px;
+    padding: 3px;
+    border-bottom: dotted black 1.5px;
+    z-index: 5;
+}
+
+#similar_pills_names_comic {
+    margin-right: 15px;
+}
+
+
+.pill_footer {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.pill_footer p{
+    display: inline-block;
+    padding: 2px;
+    border: dotted black 1.5px;
+    background-color: #d8fd00;
+    margin: 3px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    
+}
+
+.showreel {
+    z-index: 10;
+    position: fixed;
+    margin-top:-8px;
+    margin-left:-40px
+}
+
+
+#wello_loading {
+    width: 400px;
+    padding: 0px;
+    z-index: -0;
+    display: inline-block;
+    position: relative;
+    margin-left: 33%;
+    margin-top: 10%;
+}
+
+#inside {
+    font-family: "Helvetica Regular";
+    font-size: 16px;
+    padding: 3px;
+    border: solid black 1.5px;
+    display: inline-block;
+    position: relative;
+    margin-left: 45%;
+    margin-top: 5%;
+}
+
+#browse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+}
+
+
+
+#browse_pills {
+    display: inline-block;
+    padding: 2px 4px;
+    border: solid 1.5px;
+    margin-right: 5px;
+    color: black;
+}
+
+#browse_emotions {
+    display: inline-block;
+    padding: 2px 4px;
+    border: solid 1.5px;
+    margin-left: 5px;
+    color: black;
+}
+
+#emotions {
+    margin-top: 120px;
+}
+
+#pills {
+    margin-top: 120px;
+}
+
+
+#emotions p {
+    padding: 60px;
+}
+
+#pills p {
+    margin: 50px;
+    padding: 2px;
+    border-bottom:black dotted 1.5px;
+}
+
+#embaressment:hover {
+    background: url("images/embarrasment.png") no-repeat;
+    background-size: 90px;
+}
+
+#footer_emotions {
+    position: absolute;
+    margin-left: 1030px;
+}
+
+#footer_emotions_homepage {
+    display: inline-block;
+    padding: 0px 4px;
+    border: solid 1px;
+    margin-top: 50px;
+    margin-left: 10px;
+    color: black;
+}
+
+#footer_emotions_pills {
+    display: inline-block;
+    padding: 0px 4px;
+    border: solid 1px;
+    margin-top: 50px;
+    margin-left: 10px;
+    color: black;
+}
+
+#pill_title {
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+
+#pill_description {
+    display: inline-block;
+    font-size: 18px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    padding: 2px 0px;
+    margin: 5px 0px 2px 10px;
+}
+
+#pill_img {
+    margin-top: -55px;
+}
+
+#similar_pills {
+    position: relative;
+    margin-top: -85px;
+}
+
+
+
+
+
+
