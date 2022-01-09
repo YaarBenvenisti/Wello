@@ -123,7 +123,7 @@ a:visited {
     background-color: #d8fd00;
     /* transition: background-color 0.6s ease; */
     font-size: 45px;
-    padding: 10px 0px;
+    padding: 20px 0px;
     /* transition: padding 0.6s ease; */
 }
 
@@ -368,11 +368,6 @@ a:visited {
     margin: 50px;
     padding: 2px;
     border-bottom:black dotted 1.5px;
-}
-
-#embaressment:hover {
-    background: url("images/embarrasment.png") no-repeat;
-    background-size: 90px;
 }
 
 #footer_emotions {
