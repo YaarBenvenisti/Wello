@@ -115,15 +115,16 @@ a:visited {
     font-size: 35px;
     padding: 20px 0px;
     margin: 0px;
+    margin-left: 5px;
     border-bottom: solid black 4px;
 }
 
 .pills p:hover {
     background-color: #d8fd00;
-    transition: background-color 0.6s ease;
+    /* transition: background-color 0.6s ease; */
     font-size: 45px;
     padding: 10px 0px;
-    transition: padding 0.6s ease;
+    /* transition: padding 0.6s ease; */
 }
 
 
@@ -214,8 +215,9 @@ a:visited {
 
 .pill_info_emotion p {
     display: inline-block;
-    padding: 2px;
+    padding: 4px;
     border: dotted black 1.5px;
+    border-radius: 12px;
     background-color: #d8fd00;
     margin: 6px;
     margin-bottom: 0px;
