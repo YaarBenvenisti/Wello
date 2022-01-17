@@ -1,27 +1,30 @@
 @font-face {
-    font-family: "Helvetica Regular";
-    src: url("fonts/helvetic_regular.woff2") format("woff2");
+    font-family: "Neuve-Book";
+    src: url("fonts/neue_montreal-book.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Helvetica Bold";
-    src: url("fonts/helvetica_bold.woff2") format("woff2");
+    font-family: "Neuve-Bold" ;
+    src: url("fonts/neue_montreal-bold.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Minimal Mono Bold";
-    src: url("fonts/minimal-mono-bold.woff2") format("woff2");
+    font-family: "Neuve-Semibold-Italic";
+    src: url("fonts/neue_montreal-semibolditalic.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Minimal Mono Regular";
-    src: url("fonts/minimal_mono_regular.woff2") format("woff2");
+    font-family: "Neuve-Medium";
+    src: url("fonts/neue_montreal-medium.woff2") format("woff2");
 }
 
-
+@font-face {
+    font-family: "Neuve-Thin";
+    src: url("fonts/neue_montreal-thin.woff2") format("woff2");
+}
 
 * {
-    font-family: Helvetica, sans-serif;
+    font-family: "Neuve-Book";
     box-sizing: border-box;
 }
 
@@ -43,7 +46,7 @@ nav p {
 
 
 p {
-    font-size: 16px;
+    font-size: 1.15em;
     margin-top: 4px;
     padding-top: 4px;
     padding-bottom: 6px;
@@ -53,19 +56,17 @@ p {
 a:link {
     color: black;
     text-decoration: none;
-    font-size: 14px;
     margin: 0px;
 }
 
 a:visited {
     color: black;
     text-decoration: none;
-    font-size: 14px;
     margin: 0px;
 }
 
 .margins {
-    max-width: 95%;
+    max-width: 97%;
     margin: auto;
 }
 
@@ -101,18 +102,18 @@ a:visited {
 }
 
 .pills p{
-    font-family: "Helvetica Regular";
-    font-size: 35px;
+    font-family: "Neuve-Book";
+    font-size: 2.1em;
     padding: 20px 0px;
     margin: 0px;
-    margin-left: 5px;
+    margin-left: 0.5%;
     border-bottom: solid black 4px;
 }
 
 .pills p:hover {
     background-color: #d8fd00;
     /* transition: background-color 0.6s ease; */
-    font-size: 45px;
+    font-size: 2.3em;
     padding: 20px 0px;
     /* transition: padding 0.6s ease; */
 }
@@ -153,33 +154,18 @@ a:visited {
     top: 60px;
 }
 
-.pill_usage {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 400px;
-    
-}
+
 
 .pill_usage section {
-    width: 45%;
+    margin-top: 5%;
 
 }
 
-.pill_more_info {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-top: 130px;
-}
 
 .pill_more_info section {
     width: 45%;
 }
 
-.awkwardizol_dosage {
-    margin-left: 10px;
-}
 
 .awkwardizol_dosage p{
     display: inline-block;
@@ -187,14 +173,16 @@ a:visited {
     margin: 8px 0px;
     border: dotted black 1px;
     font-size: 13px;
-    position: relative;
-    top: 80px;
-    background-color: #d8fd00;
+    background-color: #c0c0bd;
+}
+
+.awkwardizol_dosage p:hover {
+    background-color: #d8fd00
 }
 
 .small_titles {
-    font-family: "Minimal Mono Bold";
-    font-size: 16px;
+    font-family: "Neuve-Thin";
+    font-size: 1.3em;
     padding-bottom: 0px;
     margin-bottom: 2px;
 }
@@ -205,13 +193,12 @@ a:visited {
 
 .pill_info_emotion p {
     display: inline-block;
-    padding: 4px;
-    border: dotted black 1.5px;
+    padding: 6px;
     border-radius: 12px;
-    background-color: #d8fd00;
+    background-color: #dbdbda;
     margin: 6px;
-    margin-bottom: 0px;
-    margin-top: 30px;
+    margin-bottom: 6%;
+    margin-top: 3%;
     font-size: 14px;
 }
 
@@ -223,7 +210,7 @@ a:visited {
 }
 
 .pill_right section {
-    margin: 40px;
+    margin-left: 10%;
 }
 
 .similar_pills {
@@ -231,66 +218,75 @@ a:visited {
     justify-content: center;
     align-items:center;
     padding: 0px;
-    
+    margin-bottom: -8%;
+    margin-left: 20%;
 }
 
-.similar_pills img{
-    margin-top: -180px;
+.similar_pills img {
+    margin-top: -22%;
 }
 
 .similar_pills_names {
     display: flex;
     justify-content: center;
     align-items:center;
-    padding: 0px;
-    margin-bottom: 0px;
+    margin-top: 5%;
 }
 
 .similar_pills_names p {
-    margin-top: -240px;
     font-size: 14px;
-    margin-left: 10px;
-    margin-right: 2px;
     padding: 3px;
-    border-bottom: dotted black 1.5px;
-    z-index: 5;
+    border: dotted black 1.5px;
+    background-color: #c0c0bd;
 }
 
-#similar_pills_names_comic {
-    margin-right: 15px;
+.similar_pills_names p:hover {
+    background-color: #d8fd00;
 }
+
+.similar_pills_names_comic {
+    margin-right: 20%;
+    margin-left: -15%;
+}
+
+.similar_pills_2 {
+    position: relative;
+    margin-top: -60%;
+    width: 100%;
+}
+
 
 
 .pill_footer {
     position: absolute;
-    right: 30px;
-    bottom: 20px;
-    margin-bottom: 0px;
+    top: 10%;
+    right: 3%;
 }
 
 .pill_footer p{
     display: inline-block;
-    padding: 2px;
+    padding: 2px 5px;
     border: dotted black 1.5px;
     background-color: #d8fd00;
-    margin: 3px;
-    margin-bottom: 0px;
-    font-size: 14px;
+    margin: 4px;
+    font-size: 1em;
 }
 
 
 .showreel {
     z-index: 10;
-    position: fixed;
+    position:static;
     margin-top:-8px;
     margin-left:-40px
 }
 
 .explanation {
-    font-size: 20px;
-    width: 70%;
-    margin-bottom: auto;
+    font-size: 1.3em;
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 1%;
 }
+
 
 
 #wello_loading {
@@ -300,11 +296,11 @@ a:visited {
     display: inline-block;
     position: relative;
     margin-left: 33%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #inside {
-    font-family: "Helvetica Regular";
+    font-family: "Neuve-Book";
     font-size: 16px;
     padding: 4px;
     border: solid black 1.5px;
@@ -312,14 +308,14 @@ a:visited {
     display: inline-block;
     position: relative;
     margin-left: 45%;
-    margin-top: 5%;
+    /* margin-top: 0%; */
 }
 
 #browse {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 350px;
+    margin-top: 25%;
 }
 
 
@@ -327,16 +323,16 @@ a:visited {
 #browse_pills {
     display: inline-block;
     padding: 2px 4px;
-    border: solid 1.5px;
+    border: solid 1.3px;
     margin-right: 5px;
     color: black;
 }
 
 #browse_emotions {
     display: inline-block;
-    padding: 4px 6px;
-    border: solid 1.5px;
-    border-radius: 16px;
+    padding: 4px 8px;
+    border: solid 1.3px;
+    border-radius: 50%;
     margin-left: 5px;
     color: black;
 }
@@ -360,51 +356,34 @@ a:visited {
     border-bottom:black dotted 1.5px;
 }
 
-#footer_emotions {
-    position: absolute;
-    margin-left: 1030px;
+
+.footer_emotion {
+    border-radius: 50%;
+    padding: 3px 5px;
 }
 
-#footer_emotions_homepage {
-    display: inline-block;
-    padding: 0px 4px;
-    border: solid 1px;
-    margin-top: 50px;
-    margin-left: 10px;
-    color: black;
-}
-
-#footer_emotions_pills {
-    display: inline-block;
-    padding: 0px 4px;
-    border: solid 1px;
-    margin-top: 50px;
-    margin-left: 10px;
-    color: black;
-}
-
-#pill_title {
+.pill_title_2 {
     margin-left: 10px;
     margin-bottom: 4px;
 }
 
-#pill_description {
+.pill_description {
+    font-family: "Neuve-Medium";
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.5em;
     border-top: solid 1px;
     border-bottom: solid 1px;
     padding: 2px 0px;
-    margin: 5px 0px 2px 10px;
+    margin: 7px 0px 2px 10px;
 }
 
-#pill_img {
-    margin-top: -55px;
+.pill_img {
+    margin-top: -10%;
 }
 
-#similar_pills {
-    position: relative;
-    margin-top: -85px;
-}
+
+
+
 
 
 
